@@ -12,7 +12,9 @@ print(first)
 print(last)
 print(middle)
 
-
+#• he ** operator unpacks the key-value pairs from a dictionary. By placing both inside a new dictionary literal {...}, Python merges them together.
+# The rule of duplicate keys: When keys overlap (like "temperature" in this example), Python processes them from left to right. The last dictionary specified wins, meaning the values in overrides overwrite the values in defaults.
+# The result: config becomes {'temperature': 0.2, 'max_tokens': 500}.
 default={'temprature':0.7, 'max_tokens':5000}
 override={'temprature':0.2}
 config={**default,**override}
