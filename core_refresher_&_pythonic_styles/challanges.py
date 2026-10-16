@@ -34,8 +34,8 @@ def format_transcript(messages):
      for i, m in enumerate(messages,start=1):
           content=m['content'] or "(empty)"
           if len(content)>30:
-               content= content[:30] +"...."
-          lines.append(f"{i}. [{m['role'].upper()}] {m['content']}")
+               content= content[:30] +"..."
+          lines.append(f"{i}. [{m['role'].upper()}] {content}")
 
      return  lines
 
