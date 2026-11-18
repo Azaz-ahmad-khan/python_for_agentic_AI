@@ -19,5 +19,6 @@ s1=Session('u1')
 s1.message.append(m)
 s2=Session('u2')
 print(s1.message)
-print(s2.message)
+print(s2.message) # separate list of messages.
 
+#basically used if users have different sessions like making a chat boat. each user has a separate list of messages.
